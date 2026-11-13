@@ -1,3 +1,25 @@
 <resources>
-    <string name="app_name">praktick6</string>
+    <string name="app_name">Бронирование столика</string>
+    <string name="title_main">Бронирование столика</string>
+    <string name="hint_name">Ваше имя</string>
+    <string name="hint_guests">Число гостей (1–10)</string>
+    <string name="cb_window">Столик у окна</string>
+    <string name="btn_calculate">Рассчитать</string>
+    <string name="btn_next">Далее</string>
+    <string name="btn_back">Назад</string>
+
+    <string name="desc_main_image">Иллюстрация бронирования</string>
+    <string name="desc_second_image">Значок подтверждения брони</string>
+
+    <string name="hint_image_click">Подсказка: введите имя и количество гостей от 1 до 10.</string>
+    <string name="err_empty_name">Ошибка: введите имя.</string>
+    <string name="err_empty_guests">Ошибка: введите число гостей.</string>
+    <string name="err_not_number">Ошибка: число гостей должно быть целым числом.</string>
+    <string name="err_guests_range">Ошибка: число гостей должно быть от 1 до 10.</string>
+
+    <string name="option_yes">да</string>
+    <string name="option_no">нет</string>
+    <string name="result_format">Бронь на имя %1$s. Гостей: %2$d. У окна: %3$s.</string>
+    <string name="title_second">Детали бронирования</string>
+    <string name="second_data_format">Гость: %1$s\nКоличество человек: %2$d\nСтолик у окна: %3$s</string>
 </resources>

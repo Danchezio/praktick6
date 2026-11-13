@@ -22,6 +22,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "praktick6"
+rootProject.name = "PR6"
 include(":app")
- 
