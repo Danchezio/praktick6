@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://android.com"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@color/bg_screen"
+android:orientation="vertical"
+android:padding="@dimen/screen_padding">
+
+<TextView
+    android:id="@+id/tvTitleSecond"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="@string/title_second"
+    android:textColor="@color/text_primary"
+    android:textSize="@dimen/text_title"
+    android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/ivResultIcon"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/image_size_second"
+        android:layout_marginTop="@dimen/element_margin"
+        android:contentDescription="@string/desc_second_image"
+        android:scaleType="fitEnd"
+        android:src="@drawable/ic_check_table" />
+
+    <TextView
+        android:id="@+id/tvSecondDetails"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/element_margin"
+        android:layout_weight="1"
+        android:textColor="@color/text_primary"
+        android:textSize="@dimen/text_body" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnBack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_button"
+        android:onClick="onBackClick"
+        android:text="@string/btn_back"
+        android:textColor="@color/text_on_button"
+        android:textSize="@dimen/text_body" />
+
+</LinearLayout>
