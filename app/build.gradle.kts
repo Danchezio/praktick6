@@ -3,6 +3,9 @@ plugins {
 }
 
 android {
+    buildFeatures {
+        viewBinding = true
+    }
     namespace = "com.example.praktick6"
     compileSdk {
         version = release(36) {

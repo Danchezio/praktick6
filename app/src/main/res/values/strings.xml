@@ -1,3 +1,28 @@
 <resources>
-    <string name="app_name">praktick6</string>
+    <string name="app_name">Конвертер валют</string>
+
+    <!-- Экран 1 -->
+    <string name="title_main">Конвертер валют</string>
+    <string name="hint_amount">Сумма в рублях (₽)</string>
+    <string name="hint_rate">Курс (₽ за 1 единицу валюты)</string>
+    <string name="btn_calc">Рассчитать</string>
+    <string name="btn_next">Далее</string>
+    <string name="desc_image_main">Иллюстрация: монета для обмена валюты</string>
+    <string name="result_format">%1$.2f ₽ = %2$.2f ед. валюты</string>
+
+    <!-- Ошибки (Snackbar и подсказка в поле) -->
+    <string name="error_amount_empty">Введите сумму в рублях</string>
+    <string name="error_amount_invalid">Сумма должна быть числом</string>
+    <string name="error_amount_positive">Сумма должна быть больше нуля</string>
+    <string name="error_rate_empty">Введите курс валюты</string>
+    <string name="error_rate_invalid">Курс должен быть числом</string>
+    <string name="error_rate_positive">Курс должен быть больше нуля</string>
+    <string name="error_calc_first">Сначала нажмите «Рассчитать»</string>
+
+    <!-- Экран 2 -->
+    <string name="title_second">Результат конвертации</string>
+    <string name="second_amount_format">Исходная сумма: %1$.2f ₽</string>
+    <string name="second_result_format">Получится: %1$.2f ед. валюты</string>
+    <string name="btn_back">Назад</string>
+    <string name="desc_image_second">Значок: конвертация выполнена</string>
 </resources>
