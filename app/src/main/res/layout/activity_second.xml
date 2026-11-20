@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/second"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/page_background">
+
+    <ScrollView
+        android:id="@+id/scroll_second"
+        android:layout_width="@dimen/constraint_fill"
+        android:layout_height="@dimen/constraint_fill"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/content_second"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical"
+            android:padding="@dimen/page_padding">
+
+            <TextView
+                android:id="@+id/tv_result_title"
+                style="@style/TaskScreenTitle"
+                android:text="@string/result_title" />
+
+            <ImageView
+                android:id="@+id/iv_discount_result"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/result_hero_height"
+                android:layout_marginTop="@dimen/field_gap"
+                android:background="@drawable/bg_hero"
+                android:clipToOutline="true"
+                android:contentDescription="@string/result_image_description"
+                android:scaleType="center"
+                app:srcCompat="@drawable/ic_discount_result" />
+
+            <TextView
+                android:id="@+id/tv_new_price"
+                style="@style/TaskLabel"
+                android:layout_marginTop="@dimen/section_gap"
+                android:textSize="@dimen/result_size"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_savings"
+                style="@style/TaskLabel"
+                android:layout_marginTop="@dimen/field_gap"
+                android:textColor="@color/savings_ink"
+                android:textStyle="bold" />
+
+            <android.widget.Button
+                android:id="@+id/btn_back"
+                style="@style/TaskButton"
+                android:layout_marginTop="@dimen/section_gap"
+                android:text="@string/back" />
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

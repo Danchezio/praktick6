@@ -1,3 +1,26 @@
 <resources>
-    <string name="app_name">praktick6</string>
+    <string name="app_name">Калькулятор скидки</string>
+    <string name="discount_badge">Скидка до 100%</string>
+    <string name="discount_image_description">Ценник со знаком процента</string>
+    <string name="result_image_description">Иллюстрация результата расчёта</string>
+    <string name="price_label">Цена, ₽</string>
+    <string name="price_hint">Например, 1500</string>
+    <string name="discount_label">Скидка, %</string>
+    <string name="discount_hint">От 0 до 100</string>
+    <string name="calculate">Рассчитать</string>
+    <string name="next">Далее</string>
+    <string name="back">Назад</string>
+    <string name="result_title">Результат расчёта</string>
+    <string name="error_price">Введите цену от 0 рублей.</string>
+    <string name="error_discount">Введите скидку от 0 до 100%.</string>
+    <string name="new_price_value">Новая цена: %1$s</string>
+    <string name="savings_value">Экономия: %1$s</string>
+    <string name="discount_summary">Новая цена: %1$s\nЭкономия: %2$s</string>
+    <string name="rubles_fractional">%1$s рубля</string>
+    <plurals name="rubles">
+        <item quantity="one">%1$s рубль</item>
+        <item quantity="few">%1$s рубля</item>
+        <item quantity="many">%1$s рублей</item>
+        <item quantity="other">%1$s рублей</item>
+    </plurals>
 </resources>
