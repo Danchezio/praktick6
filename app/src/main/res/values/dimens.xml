@@ -11,7 +11,7 @@
     <dimen name="button_corner">12dp</dimen>
     <dimen name="field_border">1dp</dimen>
     <dimen name="title_size">28sp</dimen>
-    <dimen name="task_title_size">24sp</dimen>
+    <dimen name="result_size">24sp</dimen>
     <dimen name="body_size">16sp</dimen>
     <dimen name="badge_size">14sp</dimen>
 </resources>

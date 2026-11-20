@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="@dimen/illustration_width"
+    android:height="@dimen/result_hero_height"
+    android:viewportWidth="340"
+    android:viewportHeight="156">
+    <path android:fillColor="@color/hero_accent" android:pathData="M225,0H340V156H150Z" />
+    <path android:fillColor="@color/button_fill" android:pathData="M125,82L164,43H219V98L180,137Z" />
+    <path android:fillColor="@color/white"
+        android:pathData="M203,58m-5,0a5,5 0,1 0,10 0a5,5 0,1 0,-10 0M157,80L171,94L194,71L201,78L171,108L150,87Z" />
+</vector>

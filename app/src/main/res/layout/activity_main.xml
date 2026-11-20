@@ -26,10 +26,10 @@
             <TextView
                 android:id="@+id/tv_form_title"
                 style="@style/TaskScreenTitle"
-                android:text="@string/form_title" />
+                android:text="@string/app_name" />
 
             <FrameLayout
-                android:id="@+id/frame_task_help"
+                android:id="@+id/frame_discount_banner"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/hero_height"
                 android:layout_marginTop="@dimen/field_gap"
@@ -37,16 +37,15 @@
                 android:clipToOutline="true">
 
                 <ImageView
-                    android:id="@+id/iv_task_help"
+                    android:id="@+id/iv_discount_banner"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:contentDescription="@string/help_image_description"
-                    android:focusable="true"
-                    android:scaleType="fitStart"
-                    app:srcCompat="@drawable/ic_task_help" />
+                    android:contentDescription="@string/discount_image_description"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/ic_discount" />
 
                 <TextView
-                    android:id="@+id/tv_help_badge"
+                android:id="@+id/tv_discount_badge"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical|start"
@@ -55,49 +54,44 @@
                     android:importantForAccessibility="no"
                     android:paddingHorizontal="@dimen/field_gap"
                     android:paddingVertical="@dimen/label_gap"
-                    android:text="@string/help_badge"
+                    android:text="@string/discount_badge"
                     android:textColor="@color/hero_ink"
                     android:textSize="@dimen/badge_size"
                     android:textStyle="bold" />
             </FrameLayout>
 
             <TextView
-                android:id="@+id/tv_name_label"
+                android:id="@+id/tv_price_label"
                 style="@style/TaskLabel"
-                android:text="@string/task_name_label"
+                android:text="@string/price_label"
                 android:layout_marginTop="@dimen/section_gap"
-                android:labelFor="@+id/et_task_name" />
+                android:labelFor="@+id/et_price" />
 
             <EditText
-                android:id="@+id/et_task_name"
+                android:id="@+id/et_price"
                 style="@style/TaskInput"
-                android:hint="@string/task_name_hint"
-                android:inputType="textCapSentences"
+                android:hint="@string/price_hint"
+                android:inputType="numberDecimal"
+                android:imeOptions="actionNext"
+                android:digits="0123456789,."
+                android:maxLength="13"
                 android:maxLines="1" />
 
             <TextView
-                android:id="@+id/tv_priority_label"
+                android:id="@+id/tv_discount_label"
                 style="@style/TaskLabel"
-                android:text="@string/priority_label"
+                android:text="@string/discount_label"
                 android:layout_marginTop="@dimen/field_gap"
-                android:labelFor="@+id/et_priority" />
+                android:labelFor="@+id/et_discount" />
 
             <EditText
-                android:id="@+id/et_priority"
+                android:id="@+id/et_discount"
                 style="@style/TaskInput"
-                android:hint="@string/priority_hint"
-                android:inputType="number"
+                android:hint="@string/discount_hint"
+                android:inputType="numberDecimal|numberSigned"
+                android:digits="0123456789,.-"
+                android:maxLength="13"
                 android:maxLines="1" />
-
-            <CheckBox
-                android:id="@+id/cb_urgent"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/label_gap"
-                android:minHeight="@dimen/control_height"
-                android:text="@string/urgent_label"
-                android:textColor="@color/ink"
-                android:textSize="@dimen/body_size" />
 
             <LinearLayout
                 android:id="@+id/row_actions"
@@ -112,7 +106,6 @@
                     android:layout_width="@dimen/constraint_fill"
                     android:layout_weight="1"
                     android:layout_marginEnd="@dimen/field_gap"
-                    android:onClick="onCalculateClick"
                     android:text="@string/calculate" />
 
                 <android.widget.Button
@@ -120,7 +113,6 @@
                     style="@style/TaskButton"
                     android:layout_width="@dimen/constraint_fill"
                     android:layout_weight="1"
-                    android:onClick="onNextClick"
                     android:text="@string/next" />
             </LinearLayout>
 

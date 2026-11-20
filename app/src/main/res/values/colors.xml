@@ -12,7 +12,5 @@
     <color name="hero_ink">#123E30</color>
     <color name="button_fill">#16664F</color>
     <color name="button_pressed">#0C4434</color>
-    <color name="priority_low">#176536</color>
-    <color name="priority_medium">#994900</color>
-    <color name="priority_high">#AD2F29</color>
+    <color name="savings_ink">#176536</color>
 </resources>

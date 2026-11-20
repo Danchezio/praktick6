@@ -24,45 +24,39 @@
             android:padding="@dimen/page_padding">
 
             <TextView
-                android:id="@+id/tv_card_title"
+                android:id="@+id/tv_result_title"
                 style="@style/TaskScreenTitle"
-                android:text="@string/app_name" />
+                android:text="@string/result_title" />
 
             <ImageView
-                android:id="@+id/iv_task_result"
+                android:id="@+id/iv_discount_result"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/result_hero_height"
                 android:layout_marginTop="@dimen/field_gap"
                 android:background="@drawable/bg_hero"
                 android:clipToOutline="true"
                 android:contentDescription="@string/result_image_description"
-                android:scaleType="centerCrop"
-                app:srcCompat="@drawable/ic_task_result" />
+                android:scaleType="center"
+                app:srcCompat="@drawable/ic_discount_result" />
 
             <TextView
-                android:id="@+id/tv_task_name"
+                android:id="@+id/tv_new_price"
                 style="@style/TaskLabel"
                 android:layout_marginTop="@dimen/section_gap"
-                android:textSize="@dimen/task_title_size"
+                android:textSize="@dimen/result_size"
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/tv_task_priority"
+                android:id="@+id/tv_savings"
                 style="@style/TaskLabel"
                 android:layout_marginTop="@dimen/field_gap"
+                android:textColor="@color/savings_ink"
                 android:textStyle="bold" />
-
-            <TextView
-                android:id="@+id/tv_task_urgency"
-                style="@style/TaskLabel"
-                android:layout_marginTop="@dimen/label_gap"
-                android:textColor="@color/ink_muted" />
 
             <android.widget.Button
                 android:id="@+id/btn_back"
                 style="@style/TaskButton"
                 android:layout_marginTop="@dimen/section_gap"
-                android:onClick="onBackClick"
                 android:text="@string/back" />
         </LinearLayout>
     </ScrollView>
