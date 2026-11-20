@@ -1,0 +1,17 @@
+<resources>
+    <dimen name="constraint_fill">0dp</dimen>
+    <dimen name="page_padding">24dp</dimen>
+    <dimen name="section_gap">20dp</dimen>
+    <dimen name="field_gap">12dp</dimen>
+    <dimen name="label_gap">4dp</dimen>
+    <dimen name="control_height">48dp</dimen>
+    <dimen name="hero_height">112dp</dimen>
+    <dimen name="result_hero_height">156dp</dimen>
+    <dimen name="illustration_width">340dp</dimen>
+    <dimen name="button_corner">12dp</dimen>
+    <dimen name="field_border">1dp</dimen>
+    <dimen name="title_size">28sp</dimen>
+    <dimen name="task_title_size">24sp</dimen>
+    <dimen name="body_size">16sp</dimen>
+    <dimen name="badge_size">14sp</dimen>
+</resources>

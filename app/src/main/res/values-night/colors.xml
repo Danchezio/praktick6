@@ -1,0 +1,10 @@
+<resources>
+    <color name="page_background">#101B18</color>
+    <color name="field_background">#1C2A25</color>
+    <color name="field_outline">#61746C</color>
+    <color name="ink">#EDF7F1</color>
+    <color name="ink_muted">#AFBFB6</color>
+    <color name="priority_low">#84E1AB</color>
+    <color name="priority_medium">#FFC284</color>
+    <color name="priority_high">#FFAAA5</color>
+</resources>

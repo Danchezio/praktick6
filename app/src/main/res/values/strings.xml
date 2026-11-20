@@ -1,3 +1,22 @@
 <resources>
-    <string name="app_name">praktick6</string>
+    <string name="app_name">Карточка задачи</string>
+    <string name="form_title">Новая задача</string>
+    <string name="help_badge">Как заполнить</string>
+    <string name="help_image_description">Подсказка по заполнению задачи</string>
+    <string name="result_image_description">Иллюстрация карточки задачи</string>
+    <string name="task_name_label">Название задачи</string>
+    <string name="task_name_hint">Например, подготовить отчёт</string>
+    <string name="priority_label">Приоритет</string>
+    <string name="priority_hint">От 1 до 3</string>
+    <string name="urgent_label">Срочно</string>
+    <string name="calculate">Рассчитать</string>
+    <string name="next">Далее</string>
+    <string name="back">Назад</string>
+    <string name="form_help">Введите название и приоритет от 1 до 3. Для срочной задачи поставьте флажок.</string>
+    <string name="error_name">Введите название задачи.</string>
+    <string name="error_priority">Введите целый приоритет от 1 до 3.</string>
+    <string name="priority_value">Приоритет %1$d из 3</string>
+    <string name="urgent_yes">Срочная задача</string>
+    <string name="urgent_no">Несрочная задача</string>
+    <string name="task_summary">%1$s\nПриоритет %2$d из 3 · %3$s</string>
 </resources>

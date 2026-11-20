@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/second"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/page_background">
+
+    <ScrollView
+        android:id="@+id/scroll_second"
+        android:layout_width="@dimen/constraint_fill"
+        android:layout_height="@dimen/constraint_fill"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/content_second"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical"
+            android:padding="@dimen/page_padding">
+
+            <TextView
+                android:id="@+id/tv_card_title"
+                style="@style/TaskScreenTitle"
+                android:text="@string/app_name" />
+
+            <ImageView
+                android:id="@+id/iv_task_result"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/result_hero_height"
+                android:layout_marginTop="@dimen/field_gap"
+                android:background="@drawable/bg_hero"
+                android:clipToOutline="true"
+                android:contentDescription="@string/result_image_description"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/ic_task_result" />
+
+            <TextView
+                android:id="@+id/tv_task_name"
+                style="@style/TaskLabel"
+                android:layout_marginTop="@dimen/section_gap"
+                android:textSize="@dimen/task_title_size"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_task_priority"
+                style="@style/TaskLabel"
+                android:layout_marginTop="@dimen/field_gap"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_task_urgency"
+                style="@style/TaskLabel"
+                android:layout_marginTop="@dimen/label_gap"
+                android:textColor="@color/ink_muted" />
+
+            <android.widget.Button
+                android:id="@+id/btn_back"
+                style="@style/TaskButton"
+                android:layout_marginTop="@dimen/section_gap"
+                android:onClick="onBackClick"
+                android:text="@string/back" />
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

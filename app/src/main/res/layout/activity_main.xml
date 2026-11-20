@@ -1,19 +1,136 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:background="@color/page_background">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
+    <ScrollView
+        android:id="@+id/scroll_main"
+        android:layout_width="@dimen/constraint_fill"
+        android:layout_height="@dimen/constraint_fill"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent">
 
+        <LinearLayout
+            android:id="@+id/content_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical"
+            android:padding="@dimen/page_padding">
+
+            <TextView
+                android:id="@+id/tv_form_title"
+                style="@style/TaskScreenTitle"
+                android:text="@string/form_title" />
+
+            <FrameLayout
+                android:id="@+id/frame_task_help"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/hero_height"
+                android:layout_marginTop="@dimen/field_gap"
+                android:background="@drawable/bg_hero"
+                android:clipToOutline="true">
+
+                <ImageView
+                    android:id="@+id/iv_task_help"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:contentDescription="@string/help_image_description"
+                    android:focusable="true"
+                    android:scaleType="fitStart"
+                    app:srcCompat="@drawable/ic_task_help" />
+
+                <TextView
+                    android:id="@+id/tv_help_badge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|start"
+                    android:layout_marginStart="@dimen/field_gap"
+                    android:background="@drawable/bg_help_badge"
+                    android:importantForAccessibility="no"
+                    android:paddingHorizontal="@dimen/field_gap"
+                    android:paddingVertical="@dimen/label_gap"
+                    android:text="@string/help_badge"
+                    android:textColor="@color/hero_ink"
+                    android:textSize="@dimen/badge_size"
+                    android:textStyle="bold" />
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/tv_name_label"
+                style="@style/TaskLabel"
+                android:text="@string/task_name_label"
+                android:layout_marginTop="@dimen/section_gap"
+                android:labelFor="@+id/et_task_name" />
+
+            <EditText
+                android:id="@+id/et_task_name"
+                style="@style/TaskInput"
+                android:hint="@string/task_name_hint"
+                android:inputType="textCapSentences"
+                android:maxLines="1" />
+
+            <TextView
+                android:id="@+id/tv_priority_label"
+                style="@style/TaskLabel"
+                android:text="@string/priority_label"
+                android:layout_marginTop="@dimen/field_gap"
+                android:labelFor="@+id/et_priority" />
+
+            <EditText
+                android:id="@+id/et_priority"
+                style="@style/TaskInput"
+                android:hint="@string/priority_hint"
+                android:inputType="number"
+                android:maxLines="1" />
+
+            <CheckBox
+                android:id="@+id/cb_urgent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/label_gap"
+                android:minHeight="@dimen/control_height"
+                android:text="@string/urgent_label"
+                android:textColor="@color/ink"
+                android:textSize="@dimen/body_size" />
+
+            <LinearLayout
+                android:id="@+id/row_actions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/field_gap"
+                android:orientation="horizontal">
+
+                <android.widget.Button
+                    android:id="@+id/btn_calculate"
+                    style="@style/TaskButton"
+                    android:layout_width="@dimen/constraint_fill"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="@dimen/field_gap"
+                    android:onClick="onCalculateClick"
+                    android:text="@string/calculate" />
+
+                <android.widget.Button
+                    android:id="@+id/btn_next"
+                    style="@style/TaskButton"
+                    android:layout_width="@dimen/constraint_fill"
+                    android:layout_weight="1"
+                    android:onClick="onNextClick"
+                    android:text="@string/next" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_result"
+                style="@style/TaskLabel"
+                android:layout_marginTop="@dimen/section_gap"
+                android:accessibilityLiveRegion="polite"
+                android:textStyle="bold"
+                android:visibility="gone" />
+        </LinearLayout>
+    </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>
